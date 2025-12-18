@@ -3,7 +3,7 @@
 # Born2beroot
 
 ## Description
-このプロジェクトは、仮想マシン（VirtualBox/UTM）上に安全なサーバー環境を構築することを目的とする。最小構成のOSインストールから始まり、厳格なパスワードポリシーの設定、sudoの導入、SSHサービスやUFW/AppArmorといったセキュリティ対策、そしてMariaDBやWordPressといったサービスの展開（選択課題）まで、システム管理の基礎を網羅する。
+このプロジェクトは、仮想マシン上に安全なサーバー環境を構築することを目的とする。パスワードポリシーの設定、sudoの導入、SSHサービスやUFW/AppArmorといったセキュリティ対策、そしてMariaDBやWordPressといったサービスの展開（選択課題）まで、システム管理の基礎を網羅する。
 
 ## Project description
 ### Operating System Choice
