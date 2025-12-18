@@ -18,7 +18,11 @@
 ### Execution
 サーバーを起動し、ホストOSのターミナルから以下のコマンドでSSH接続します：
 ```bash
-ssh hwakatsu@localhost -p 4242
+"ssh hwakatsu@localhost -p 4242"
+
+## Project description
+### Operating System Choice
+本プロジェクトでは **Debian** を選択した。
 
 説明：
 //*--0--*//
