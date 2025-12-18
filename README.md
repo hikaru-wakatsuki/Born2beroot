@@ -1,4 +1,24 @@
+*This project has been created as part of the 42 curriculum by hwakatsu.*
+
 # Born2beroot
+
+## Description
+このプロジェクトは、仮想マシン（VirtualBox/UTM）上に安全なサーバー環境を構築することを目的とする。最小構成のOSインストールから始まり、厳格なパスワードポリシーの設定、sudoの導入、SSHサービスやUFW/AppArmorといったセキュリティ対策、そしてMariaDBやWordPressといったサービスの展開（選択課題）まで、システム管理の基礎を網羅する。
+
+## Project description
+### Operating System Choice
+本プロジェクトでは **Debian** を選択した。
+
+## Instructions
+### Compilation & Installation
+1. 仮想マシンソフトウェア（VirtualBox等）を起動します。
+2. 作成した `.vdi` または `.vmdk` ファイルをロードします。
+3. 仮想マシンの設定で、ポートフォワーディング（Host: 4242 -> Guest: 4242）が設定されていることを確認してください。
+
+### Execution
+サーバーを起動し、ホストOSのターミナルから以下のコマンドでSSH接続します：
+```bash
+ssh hwakatsu@localhost -p 4242
 
 説明：
 //*--0--*//
@@ -55,7 +75,7 @@ sshのユーザー認証方法
 **UFW（Uncomplicated Firewall）**:Ubuntu で標準的に提供される、シンプル志向のCLIツール。
 **firewalld**:RedHat系で標準の常駐デーモン型ファイアウォール。NICや送信元に応じて異なるポリシーを適用できる。
 
-ufw allow 
+ufw allow
 utf deny
 
 hostnamectl
