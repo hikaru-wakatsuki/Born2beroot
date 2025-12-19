@@ -132,10 +132,10 @@ sshのユーザー認証方法
 
     Selected Service: **OpenLiteSpeed**
 
-    Reason:「Apache互換の超高速Webサーバ（商用）」Apache互換を強く意識して作られた 高速・高性能な商用Webサーバ
+    Reason:「Apache互換の超高速Webサーバ（商用）」であるため。Apache互換を強く意識して作られた 高速・高性能な商用Webサーバ
 
 ### HASH
- hash <groupname>
+ shasum <filename>
 
 ### SSH
  ssh [username]@[IP_ADDRESS] -p 4242
