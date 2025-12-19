@@ -89,6 +89,17 @@ sshのユーザー認証方法
 ・実行履歴がログに残る（監査・追跡に有用）
 ・既定では「ユーザー自身のパスワード」を尋ねるため、rootパスワードを配らずに管理できる
 
+### cron
+決まった時間・周期でコマンドやスクリプトを自動実行する仕組み
+
+*/10 * * * * /usr/local/bin/monitoring.sh
+
+ 分　時　日　月　曜日　コマンド
+
+### monitoring.sh
+
+
+
 ## Instructions
 ### 1. Installation and Partitioning (Bonus)
 
@@ -120,11 +131,11 @@ sshのユーザー認証方法
 
 以下の軽量な構成（LLMPスタック）でWordPressを構築した。
 
-    Web Server: lighttpd
+    Web Server: **lighttpd**:軽量OSSWebサーバ
 
-    Database: MariaDB
+    AP: **WordPress**:PHP製アプリケーション
 
-    Language: PHP
+    Database: **MariaDB**:OSSデータベース
 
     UFW: 80番ポート（HTTP）を許可し、外部からのアクセスを可能にした。
 
@@ -157,6 +168,7 @@ sshのユーザー認証方法
  
  sudo adduser <username> <groupname>
 
+　passwd <username>
 ### PASSWD
  /etc/login.defs
 
@@ -167,10 +179,18 @@ sshのユーザー認証方法
  /etc/sudoers.d/sudo.log
 
 ### HOST
- hostnamectl -l
+ hostnamectl set-hostname <hostname>
+
+ hostnamectl
 
  /etc/hosts
 
+### cron
+ crontab -e   # 編集
+
+ crontab -l   # 表示
+
+ crontab -r   # 削除
 ### WordPress
 http://localhost:8080/
 ### OpenLiteSpeed
