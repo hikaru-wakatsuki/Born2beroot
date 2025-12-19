@@ -130,35 +130,51 @@ sshのユーザー認証方法
 
 2. Extra Service (Service of your choice)
 
-    Selected Service: [サービス名：例 Fail2Ban]
+    Selected Service: **OpenLiteSpeed**
 
-    Reason: [選定理由：例 SSHへのブルートフォース攻撃を検知し、自動的にIPを遮断して防御力を高めるため]
+    Reason:「Apache互換の超高速Webサーバ（商用）」Apache互換を強く意識して作られた 高速・高性能な商用Webサーバ
 
 ### HASH
-
+ hash <groupname>
 
 ### SSH
-ssh [username]@[IP_ADDRESS] -p 4242
+ ssh [username]@[IP_ADDRESS] -p 4242
 
 ### UFW
-sudo ufw status
-sudo ufw allow [ポート番号]
-sudo utf deny [ポート番号]
+ sudo ufw status
+
+ sudo ufw allow [ポート番号]
+
+ sudo utf deny [ポート番号]
 
 ### GROUP
-sudo addgroup <groupname>
-getent group <groupname>
+ sudo addgroup <groupname>
+
+ getent group <groupname>
 
 ### USER
-sudo adduser <login>
-sudo adduser <username> <groupname>
+ sudo adduser <login>
+ 
+ sudo adduser <username> <groupname>
 
 ### PASSWD
-/etc/login.defs
-/etc/pam.d/common-password
+ /etc/login.defs
 
+ /etc/pam.d/common-password
+ 
+ chage -l hwakatsu
 ### SUDO
-/etc/sudoers.d/sudo.log
+ /etc/sudoers.d/sudo.log
+
+### HOST
+ hostnamectl -l
+
+ /etc/hosts
+
+### WordPress
+http://localhost:8080/
+### OpenLiteSpeed
+http://localhost:7080
 
 ## Resources
 **ハイパーバイザー**:
