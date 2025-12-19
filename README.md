@@ -98,7 +98,27 @@ sshのユーザー認証方法
 
 ### monitoring.sh
 
+**uname -a**:OSの基本情報
 
+**/proc/cpuinfo**:CPUの詳細情報を持つファイル
+
+**free --mega**:メモリ使用状況を表示（MB）
+
+**df -m**:ディスク使用量を表示（MB）
+
+**vmstat 1 2**:CPU・メモリ・IOの状態をリアルタイム表示（1秒間隔・2回表示）
+
+**who -b**:最後に起動した時刻（ブート時刻）
+
+**lsblk**:ブロックデバイス（ディスク構成）表示
+
+**ss -ta**:TCPソケット一覧表示（TCP・ALL）
+
+**users**:現在ログインしているユーザー一覧
+
+**ip link**:ネットワークインターフェース情報
+
+**journalctl _COMM=sudo**:systemdのログ管理（_COMM=sudo = sudo実行記録のみ）
 
 ## Instructions
 ### 1. Installation and Partitioning (Bonus)
