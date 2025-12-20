@@ -185,7 +185,7 @@ sshのユーザー認証方法
 
 ### USER
  sudo adduser <login>
- 
+
  sudo adduser <username> <groupname>
 
 　passwd <username>
@@ -193,10 +193,10 @@ sshのユーザー認証方法
  /etc/login.defs
 
  /etc/pam.d/common-password
- 
+
  chage -l hwakatsu
 ### SUDO
- /etc/sudoers.d/sudo.log
+/etc/sudoers.d/sudo_config
 
 ### HOST
  hostnamectl set-hostname <hostname>
